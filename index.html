@@ -14,7 +14,7 @@
         <!-- Side Navigation Bar -->
         <nav id="sideNav" class="sideNav">
             <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
-            <a href="home" onclick="closeNav()">Home</a>
+            <a href="#home" onclick="closeNav()">Home</a>
             <a href="#ourTutors" onclick="closeNav()">Our Tutors</a>
             <a href="#gallery" onclick="closeNav()">Gallery</a>
             <a href="#customerRate" onclick="closeNav()">Customer Rate</a>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="form">
                         <label for="gender">Gender : </label>
-                        <select id="gender" aria-placeholder="choose">
+                        <select id="gender" required>
                             <option value="" disabled selected>Choose</option>
                             <option value="girls">Girls</option>
                             <option value="boys">Boys</option>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="form">
                         <label for="subject">Subject : </label>
-                        <select id="subject">
+                        <select id="subject" required>
                             <option value="" disabled selected>Choose</option>
                             <option value="eng">English</option>
                             <option value="math">Mathematics</option>
@@ -196,7 +196,7 @@
                     </div>
                     <div class="form">
                         <label for="class">Class Size : </label>
-                        <select id="class">
+                        <select id="class" required>
                             <option value="" disabled selected>Choose</option>
                             <option value="priv">Private (1 student)</option>
                             <option value="small">Small Group (2-3 student)</option>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="form">
                         <label for="relationship">Relationship with Student : </label>
-                        <select id="relationship">
+                        <select id="relationship" required>
                             <option value="" disabled selected>Choose</option>
                             <option value="myself">Myself</option>
                             <option value="parents">Parents</option>
