@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Belajar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Side Navigation Bar -->
+        <nav id="sideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+            <a href="home" onclick="closeNav()">Home</a>
+            <a href="#ourTutors" onclick="closeNav()">Our Tutors</a>
+            <a href="#gallery" onclick="closeNav()">Gallery</a>
+            <a href="#customerRate" onclick="closeNav()">Customer Rate</a>
+            <a href="#joinUs" onclick="closeNav()">Join Us</a>
+        </nav>
+
+        <!-- Logo and Side Button -->
+        <div class="nav">
+            <span onclick="openNav()">&#9776;</span>
+            <a href="#home" class="logo"><img src="./assets/logoRumBel.webp"></a>
+        </div>
+
+        <!-- Top Navigation Bar -->
+        <nav class="topNav">
+            <a href="#home">Home</a>
+            <a href="#ourTutors">Our Tutors</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#customerRate">Customer Rate</a>
+            <a href="#joinUs">Join Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="bannerPic">
+            </div>
+            <article>
+                <div class="banner">
+                    <img src="./assets/logoRumBel.webp" />
+                    <h2>We Learn, We Study, We have FUN</h2>
+                    <p>A place to learn & study differently</p>
+                </div>
+                <button class="joinButton">JOIN NOW</button>
+            </article>
+        </section>
+        <section class="ourTutors" id="ourTutors">
+            <h1>Meet Our Tutors</h1>
+            <section class="tutorsProfile">
+                <section class="tutor">
+                    <div>
+                        <img>
+                        <h2>Acep H. P. U.</h2>
+                    </div>
+                    <ul>
+                        <li>A/AS Level Biology</li>
+                        <li>UTBK Biologi</li>
+                    </ul>
+                </section>
+                <section class="tutor">
+                    <div>
+                        <img>
+                        <h2>Ananda T. R.</h2>
+                    </div>
+                    <ul>
+                        <li>Science</li>
+                        <li>Mathematics</li>
+                        <li>Student Assessment Preparation</li>
+                    </ul>
+                </section>
+                <section class="tutor">
+                    <div>
+                        <img>
+                        <h2>Rusdianto E.</h2>
+                    </div>
+                    <ul>
+                        <li>Science</li>
+                        <li>Mathematics</li>
+                    </ul>
+                </section>
+                <section class="tutor">
+                    <div>
+                        <img>
+                        <h2>Adinda N. W.</h2>
+                    </div>
+                    <ul>
+                        <li>Science</li>
+                        <li>Mathematics</li>
+                    </ul>
+                </section>
+                <section class="tutor">
+                    <div>
+                        <img>
+                        <h2>Putri K. N. R.</h2>
+                    </div>
+                    <ul>
+                        <li>English</li>
+                    </ul>
+                </section>
+                <section class="tutor">
+                    <div>
+                        <img>
+                        <h2>Shinna M. H.</h2>
+                    </div>
+                    <ul>
+                        <li>Science</li>
+                        <li>Mathematics</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section class="gallery" id="gallery">
+            <h1>Gallery</h1>
+            <section class="photoGallery">
+                <div class="photoGallery" id="one"><img src="./assets/gallery_1.webp" alt="class photo"></div>
+                <div class="photoGallery" id="two"><img src="./assets/gallery_2.webp" alt="class photo"></div>
+                <div class="photoGallery" id="three"><img src="./assets/gallery_3.webp" alt="class photo"></div>
+                <div class="photoGallery" id="four"><img src="./assets/gallery_4.webp" alt="class photo"></div>
+                <div class="photoGallery" id="five"><img src="./assets/gallery_5.webp" alt="class photo"></div>
+                <div class="photoGallery" id="six"><img src="./assets/gallery_6.webp" alt="class photo"></div>
+                <div class="photoGallery" id="seven"><img src="./assets/gallery_7.webp" alt="class photo"></div>
+            </section>
+        </section>
+        <section class="customerRate" id="customerRate">
+            <h1>What They Think</h1>
+            <section class="opinion">
+                <div>
+                    <img src="./assets/profile_1.webp" alt="picture of students's mother">
+                    <p>"Alhamdulillah, my son got Bronze on his first ever competition. Thank you for being patient with
+                        him."</p>
+                </div>
+                <div>
+                    <img src="./assets/profile_2.webp" alt="picture of students's mother">
+                    <p>"Alhamdulillah, my daughter went to the semifinal. No wonder the tutor here was highly
+                        recommended"</p>
+                </div>
+                <div>
+                    <img src="./assets/profile_3.webp" alt="picture of students's mother">
+                    <p>"All student from our school that learn at Rumah Belajar pass the semifinal, Alhamdulillah."</p>
+                </div>
+            </section>
+        </section>
+        <section class="joinUs" id="joinUs">
+            <h1 class="joinUs">Come Join Us!</h1>
+            <p class="joinUs">Fill this form and our admin will contact you in 1-5 office day</p>
+            <form class="joinUs">
+                <fieldset>
+                    <legend>Student Data</legend>
+                    <div class="form">
+                        <label for="name">Full Name : </label>
+                        <input id="name" type="text" placeholder="Name" required />
+                    </div>
+                    <div class="form">
+                        <label for="gender">Gender : </label>
+                        <select id="gender" aria-placeholder="choose">
+                            <option value="" disabled selected>Choose</option>
+                            <option value="girls">Girls</option>
+                            <option value="boys">Boys</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="birth">Date of Birth : </label>
+                        <input id="birth" type="date" placeholder="Date of Birth" required />
+                    </div>
+                    <div class="form">
+                        <label for="grade">Grade : </label>
+                        <input id="grade" type="number" placeholder="Grade" required />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Learning Package</legend>
+                    <div class="form">
+                        <label for="package">Package : </label>
+                        <select id="package" required>
+                            <option value="" disabled selected>Choose</option>
+                            <option value="online">Online</option>
+                            <option value="offlineHome">Offline at home</option>
+                            <option value="offlineSite">Offline on site</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="subject">Subject : </label>
+                        <select id="subject">
+                            <option value="" disabled selected>Choose</option>
+                            <option value="eng">English</option>
+                            <option value="math">Mathematics</option>
+                            <option value="sci">Science</option>
+                            <option value="a/as">A/AS Level</option>
+                            <option value="Multiple">Multiple Subject</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="class">Class Size : </label>
+                        <select id="class">
+                            <option value="" disabled selected>Choose</option>
+                            <option value="priv">Private (1 student)</option>
+                            <option value="small">Small Group (2-3 student)</option>
+                            <option value="open">Open Group (>3 student)</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Person</legend>
+                    <div class="form">
+                        <label for="guardianName">Name : </label>
+                        <input id="guardianName" type="text" placeholder="Name" required />
+                    </div>
+                    <div class="form">
+                        <label for="email">Email : </label>
+                        <input id="email" type="email" placeholder="Email" required />
+                    </div>
+                    <div class="form">
+                        <label for="phoneNumber">Phone Number : </label>
+                        <input id="phoneNumber" type="number" placeholder="Phone Number" required />
+                    </div>
+                    <div class="form">
+                        <label for="relationship">Relationship with Student : </label>
+                        <select id="relationship">
+                            <option value="" disabled selected>Choose</option>
+                            <option value="myself">Myself</option>
+                            <option value="parents">Parents</option>
+                            <option value="sibling">Sibling</option>
+                            <option value="guardian">Guardian</option>
+                        </select>
+                    </div>
+                    <div class="message">
+                        <label for="message">Extra Note : </label>
+                        <textarea id="message" rows="5"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
